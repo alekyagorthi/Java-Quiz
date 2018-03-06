@@ -1,0 +1,387 @@
+Q)What will be the output of the program?
+
+public class Foo 
+{  
+    public static void main(String[] args) 
+    {
+        try 
+        { 
+            return; 
+        } 
+        finally 
+        {
+            System.out.println( "Finally" ); 
+        } 
+    } 
+}
+A.Finally
+B.Compilation fails.
+C.The code runs with no output.
+D.An exception is thrown at runtime.
+@A
+Q)void start()
+ {  
+    A a = new A(); 
+    B b = new B(); 
+    a.s(b);  
+    b = null; /* Line 5 */
+    a = null;  /* Line 6 */
+    System.out.println("start completed"); /* Line 7 */
+ } 
+When is the B object, created in line 3, eligible for garbage collection?
+A.after line 5
+B.after line 6
+C.after line 7
+D.There is no way to be absolutely certain.
+@D
+Q)Which four options describe the correct default values for array elements of the types indicated?
+1.int -> 0
+2.String -> "null"
+3.Dog -> null
+4.char -> '\u0000'
+5.float -> 0.0f
+6.boolean -> true
+
+A.1, 2, 3, 4
+B.1, 3, 4, 5
+C.2, 4, 5, 6
+D.3, 4, 5, 6
+@B
+Q)Which is a reserved word in the Java programming language?
+A.method
+B.native
+C.subclasses
+D.reference
+E.array
+@B
+Q)switch(x) 
+{ 
+    default:  
+        System.out.println("Hello"); 
+}
+Which two are acceptable types for x?
+1.byte
+2.long
+3.char
+4.float
+5.Short
+6.Long
+A.1 and 3
+B.2 and 4
+C.3 and 5
+D.4 and 6
+@A
+Q)What is the name of the method used to start a thread execution?
+A.init();
+B.start();
+C.run();
+D.resume();
+@B
+Q)Which is true about an anonymous inner class?
+A.It can extend exactly one class and implement exactly one interface.
+B.It can extend exactly one class and can implement multiple interfaces.
+C.It can extend exactly one class or implement exactly one interface.
+D.It can implement multiple interfaces regardless of whether it also extends a class.
+@C
+Q)Which is true about a method-local inner class?
+A.It must be marked final.
+B.It can be marked abstract.
+C.It can be marked public.
+D.It can be marked static.
+@B
+Q)public class Test { }
+  What is the prototype of the default constructor?
+A.Test( )
+B.Test(void)
+C.public Test( )
+D.public Test(void)
+@C
+Q)Which one creates an instance of an array?
+A.int[ ] ia = new int[15];
+B.float fa = new float[20];
+C.char[ ] ca = "Some String";
+D.int ia[ ] [ ] = { 4, 5, 6 }, { 1,2,3 };
+@A
+Q)Which is true about an anonymous inner class?
+A.It can extend exactly one class and implement exactly one interface.
+B.It can extend exactly one class and can implement multiple interfaces.
+C.It can extend exactly one class or implement exactly one interface.
+D.It can implement multiple interfaces regardless of whether it also extends a class.
+@C
+Q)Which constructs an anonymous inner class instance?
+A.Runnable r = new Runnable() { };
+B.Runnable r = new Runnable(public void run() { });
+C.Runnable r = new Runnable { public void run(){}};
+D.System.out.println(new Runnable() {public void run() { }});
+@D
+Q)public class MyOuter 
+{
+    public static class MyInner 
+    {
+        public static void foo() { }
+    }
+}
+which statement, if placed in a class other than MyOuter or MyInner, instantiates an instance of the nested class?
+A.MyOuter.MyInner m = new MyOuter.MyInner();
+B.MyOuter.MyInner mi = new MyInner();
+C.MyOuter m = new MyOuter();
+  MyOuter.MyInner mi = m.new MyOuter.MyInner();
+D.MyInner mi = new MyOuter.MyInner();
+@A
+Q)What will be the output of the program?
+public class Foo 
+{  
+    public static void main(String[] args) 
+    {
+        try 
+        { 
+            return; 
+        } 
+        finally 
+        {
+            System.out.println( "Finally" ); 
+        } 
+    } 
+}
+A.Finally
+B.Compilation fails.
+C.The code runs with no output.
+D.An exception is thrown at runtime.
+@A
+Q)What is the value of "d" after this line of code has been executed?
+double d = Math.round ( 2.5 + Math.random() );
+A.2
+B.3
+C.4
+D.2.5
+@B
+Q)Which of the following would compile without error?
+A.int a = Math.abs(-5);
+B.int b = Math.abs(5.0);
+C.int c = Math.abs(5.5F);
+D.int d = Math.abs(5L);
+@A
+Q)Which of the following are valid calls to Math.max?
+1.Math.max(1,4)
+2.Math.max(2.3, 5)
+3.Math.max(1, 3, 5, 7)
+4.Math.max(-1.5, -2.8f)
+A.1, 2 and 4
+B.2, 3 and 4
+C.1, 2 and 3
+D.3 and 4
+@A
+Q)You want subclasses in any package to have access to members of a superclass. Which is the most restrictive access that accomplishes this objective?
+A.public
+B.private
+C.protected
+D.transient
+@C
+Q)Given a method in a protected class, what access modifier do you use to restrict access to that method to only the other members of the same class?
+A.final
+B.static
+C.private
+D.protected
+@C
+Q)Which is a valid declaration within an interface?
+A.public static short stop = 23;
+B.protected short stop = 23;
+C.transient short stop = 23;
+D.final void madness(short stop);
+@A
+Q)What is the widest valid returnType for methodA in line 3?
+public class ReturnIt 
+{ 
+    returnType methodA(byte x, double y) /* Line 3 */
+    { 
+        return (long)x / y * 2; 
+    } 
+}
+A.int
+B.byte
+C.long
+D.double
+@D
+Q)Which one creates an instance of an array?
+A.int[ ] ia = new int[15];
+B.float fa = new float[20];
+C.char[ ] ca = "Some String";
+D.int ia[ ] [ ] = { 4, 5, 6 }, { 1,2,3 };
+@A
+Q)What is the name of the method used to start a thread execution?
+A.init();
+B.start();
+C.run();
+D.resume();
+@B
+Q)Which two are valid constructors for Thread?
+1.Thread(Runnable r, String name)
+2.Thread()
+3.Thread(int priority)
+4.Thread(Runnable r, ThreadGroup g)
+5.Thread(Runnable r, int priority)
+A.1 and 3
+B.2 and 4
+C.1 and 2
+D.2 and 5
+@C
+Q)Which method registers a thread in a thread scheduler?
+A.run();
+B.construct();
+C.start();
+D.register();
+@C
+Q)Which of the following will not directly cause a thread to stop?
+A.notify()
+B.wait()
+C.InputStream access
+D.sleep()
+@A
+Q)Which class or interface defines the wait(), notify(),and notifyAll() methods?
+A.Object
+B.Thread
+C.Runnable
+D.Class
+@A
+Q)What allows the programmer to destroy an object x?
+A.x.delete()
+B.x.finalize()
+C.Runtime.getRuntime().gc()
+D.Only the garbage collection system can destroy an object.
+@D
+Q)Which of these method of class String is used to compare two String objects for their equality?
+A.equals()
+B.Equals()
+C.isequal()
+D.Isequal()
+@A
+Q)Which of these method of class String is used to check weather a given object starts with a particular string literal?
+A.startsWith()
+B.endsWith()
+C.Starts()
+D.ends()
+@A
+Q)Which of these data type value is returned by equals() method of String class?
+A.char
+B.int
+C.boolean
+D.All of the mentioned
+@C
+Q)What is the process of defining more than one method in a class differentiated by method signature?
+A.Function overriding
+B.Function overloading
+C.Function doubling
+D.None of the mentioned
+@B
+Q)Which of the following is a method having same name as that of it’s class?
+A.finalize
+B.delete
+C.class
+D.constructor
+@D
+Q)Which of these class is superclass of every class in Java?
+A.String class
+B.Object class
+C.Abstract class
+D.ArrayList class
+@B
+Q)Which of these keywords cannot be used for a class which has been declared final?
+A.abstract
+B.extends
+C.abstract and extends
+D.None of the mentioned
+@A
+Q)Which of these keyword must be used to inherit a class?
+A.super
+B.this
+C.extent
+D.extends
+@D
+Q) Which of these functions is called to display the output of an applet?
+A.display()
+B.paint()
+C.displayApplet()
+D.PrintApplet()
+@B
+Q)What is the use of try & catch?
+A.It allows us to manually handle the exception.
+B.It allows to fix errors.
+C.It prevents automatic terminating of the program in cases when an exception occurs.
+D.All of the mentioned.
+@D
+Q)Which of these keywords are used for the block to handle the exceptions generated by try block?
+A.try
+B.catch
+C.throw
+D.check
+@B
+Q)Which of these class is superclass of every class in Java?
+A.String class
+B.Object class
+C.Abstract class
+D.ArrayList class
+@B
+Q)Which of these method of Object class can clone an object?
+A.Objectcopy()
+B.copy()
+C.Object clone()
+D.clone()
+@C
+Q)Which of these keywords can be used to prevent inheritance of a class?
+A.super
+B.constant
+C.Class
+D.final
+@D
+Q)Which of these events is generated when the a window is closed?
+A.TextEvent
+B.MouseEvent
+C.FocusEvent
+D.WindowEvent
+@D
+Q)Which of these methods can be used to obtain the coordinates of a mouse?
+A.getPoint()
+B.getCoordinates()
+C.getMouseXY()
+D.getMouseCordinates()
+@A
+Q)Which of these keywords is used to define interfaces in Java?
+A.interface
+B.Interface
+C.intf
+D.Intf
+@A
+Q)Which of these method of class String is used to extract more than one character at a time a String object?
+A.getchars()
+B.GetChars()
+C.Getchars()
+D.getChars()
+@D
+Q)Which of the following is a valid declaration of an object of class Box?
+A.Box obj = new Box();
+B.Box obj = new Box;
+C.obj = new Box();
+D.new Box obj;
+@A
+Q)Which of these statement is incorrect?
+A.Every class must contain a main() method.
+B.Applets do not require a main() method at all.
+C.There can be only one main() method in a program.
+D.main() method must be made public.
+@A
+Q)Which of these is necessary condition for automatic type conversion in Java?
+A.The destination type is smaller than source type.
+B.The destination type is larger than source type.
+C.The destination type can be larger or smaller than source type.
+D.None of the mentioned
+@B
+Q)Which of these statement is incorrect?
+A.switch statement is more efficient than a set of nested ifs.
+B.two case constants in the same switch can have identical values.
+C.switch statement can only test for equality, whereas if statement can evaluate any type of boolean expression.
+D.it is possible to create a nested switch statements.
+@B
+
+
+
+

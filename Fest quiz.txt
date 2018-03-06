@@ -1,0 +1,621 @@
+Q )What is the output of the following code snippet?
+
+#include<stdio.h>
+
+main() 
+{
+    char c = 'A'+255;
+   
+    printf("%c", c);
+}
+
+A . A
+B . B
+C . Overflow error at runtime
+D . Compile error
+@A
+Q) What is the output of the following program?
+
+#include<stdio.h>
+
+main()
+{
+   printf("\");
+}
+
+A. \
+B .\"
+C. "
+D. Compile error
+@D
+Q) What is the output of the following program?
+
+#include<stdio.h>
+
+main()
+{ 
+   int a[3] = {2,1};
+   
+   printf("%d", a[a[1]]); 
+}
+
+A.0
+B .1
+C.2
+D.3
+@B
+Q) Does both the loops in the following programs prints the correct string length?
+
+#include<stdio.h>
+
+main()
+{
+   int i;
+   char s[] = "hello";
+
+   for(i=0; s[i]; ++i);
+      printf("%d ", i);
+
+   i=0; 
+   while(s[i++]);
+      printf("%d ", i);
+}
+
+A.Yes, both the loops prints the correct length
+B.Only for loop prints the correct length
+C.Only while loop prints the correct length
+D.Compile error in the program.
+@B
+Q)What is the output of the following statement?
+
+#include<stdio.h>
+
+main()
+{ 
+   printf("%d", !0<2);
+}
+
+A.0
+B.1
+C.False
+D.True
+@B
+Q) int fun(); - The declaration indicates the presence of a function defined inside the current module or in the same file.
+
+A. True
+B. False
+C.Not defined 
+D.None of the above
+@A
+Q)Which header file supports the functions - malloc() and calloc()?
+
+A.stdlib.h
+B.memory.h
+C.math.h
+D. stdio.h
+@A 
+Q) The return keyword used to transfer control from a function back to the calling function.
+
+A. Yes
+
+B. Switch
+
+C. go back
+
+D.goto
+@A
+Q) The correct order of evaluation for the expression “z = x + y * z / 4 % 2 – 1”
+
+A. * / % = + -
+B./ * % - + =
+C.- + = * % /
+D. * / % + - =
+@D
+Q)Choose the function that is most appropriate for reading in a multi-word string?
+
+A.strnset()
+B.scanf()
+C.strchr()
+D.gets()
+@D
+Q) What will be the output of the given below code?
+
+#include<stdio.h>
+
+int main()
+{
+   const int *ptr = &i;
+   
+   char str[] = "Welcome";
+   s = str;
+   while(*s)
+   printf("%c", *s++);
+   return 0;
+}
+
+A.Welcome
+B.0
+C.Wel
+D.Come
+@A 
+Q)What value strcmp() function returns when two strings are the same?
+
+A.0
+B.2
+C.1
+D.Error
+@A
+Q) Where to place “f” with a double constant 3.14 to specify it as a float?
+
+A.(float)(3.14)(f)
+B.(f)(3.14)
+C.3.14f
+D.f(3.14)
+@C
+Q) A local variable is stored in ___
+
+A.Code segment
+B.Stack segment
+C.Heap segment
+D.None of the above
+@B
+Q)Which operator is used to continue the definition of macro in the next line?
+
+A.#
+B.##
+C.$
+D.\ 
+@D
+Q)First operating system designed using C programming language.
+ 
+A.DOS
+B.Windows
+C.UNIX
+D.Mac
+@C
+Q)The prototype of a function can be used to,
+
+A.Define a function
+B.Declare a function
+C.Erase a function
+D.None of the above
+@B
+Q)Why to use fflush() library function?
+
+A.To flush all streams and specified streams
+B.To flush only specified stream
+C.To flush input/output buffer
+D.Invalid library function
+@A
+Q)What is the output of the following code snippet?
+
+#include<stdio.h>
+
+main() 
+{
+   int x = 5;
+   
+   if(x=5)
+   {	
+      if(x=5) printf("Hello");
+   } 
+   printf("Hi");
+}
+
+A.HelloHi
+B.Hi
+C.Hello
+D. Compiler error
+@A
+Q)A single line comment in C language source code can begin with _____
+
+A.;
+B.:
+C./*
+D.//
+@D
+Q)What is the output of the following program?
+
+#include<stdio.h>
+
+main() 
+{
+   char *p = NULL;
+   
+   printf("%c", *p);
+}
+
+A.NULL
+B.0
+C.Compile error
+D.Runtime error.
+@D
+Q)What is the output of the following program?
+
+#include<stdio.h>
+
+main()
+{	
+    register int x = 5;
+
+    int *p;
+    p=&x;
+    x++;
+    printf("%d",*p);
+}
+
+A.Compile error
+B.5
+C.6
+D.Garbage value
+@A
+Q) Following is the invalid inclusion of a file to the current program. Identify it.
+
+A)#include <file>
+B)#include “file”
+C)#include < file
+D)All of the above are invalid.
+@C
+Q) How many times the given below program will print "IndiaPIN"?
+
+#include<stdio.h>
+
+int main ()
+{
+   printf("IndiaPIN");
+   main();
+   return 0;
+
+}
+
+A.Unlimited times
+B.0 times
+C.100 times
+D.Till stack run over
+@D
+Q)In the given below statement, what does the “arr” indicate?
+
+   char *arr[30];
+
+A .arr is a array of function
+B.arr is a array of 30 characters
+C.arr is a pointer to an array
+D. arr is a array of 30 character pointers
+@D
+Q) What is the output of the following code snippet?
+
+#include<stdio.h>
+
+main() 
+{ 
+   const int a = 5; 
+   
+   a++; 
+   printf("%d", a); 
+}
+
+A.5
+B.6
+C.Runtime error
+D.Compile error
+@D
+Q)Choose the correct statement that is a combination of these two statements,
+
+   Statement 1: char *p;
+   
+   Statement 2: p = (char*) malloc(100);
+
+A.char p = *malloc(100);
+B.char *p = (char*)malloc(100);
+C.char *p = (char) malloc(100);
+D.None of the above
+@B
+Q)What is the output of the following program?
+
+#include<stdio.h>
+
+{ 
+   int x = 1;
+   switch(x) 
+   {
+      default: printf("Hello");
+      case 1: printf("hi"); break;
+   }
+}
+
+A.Hello
+B.Hi
+C.HelloHi
+D.Compile error
+@B
+Q)First operating system designed using C programming language.
+
+A.DOS
+B.Windows
+C.UNIX
+D.Mac
+@C
+Q)What is the output of the following program?
+
+#include<stdio.h>
+
+main()
+{ 
+   char *s = "Abc";
+   
+   while(*s)
+      printf("%c", *s++);
+}
+
+A.Abc
+B.bc
+C.Compile error
+D.Runtime error
+@A
+Q)What is the output of the below code snippet?
+
+#include<stdio.h>
+
+main() 
+{
+   for(;;)printf("Hello");
+}
+
+A.Infinite loop
+B.Prints “Hello” once.
+C.No output
+D.Compile error
+@A
+Q)What is the output of the following program?
+
+#include<stdio.h>
+
+main()
+{	
+   char *s = "Hello, "
+   "World!";
+
+   printf("%s", s);
+}
+
+A.Hello, World!
+
+B.Hello,
+
+World!
+
+C.Hello
+D.Compile error
+@A
+Q) What is the output of the following program?
+
+#include<stdio.h>
+
+int main();
+void main()
+{
+   printf("Okay"); 
+}
+
+A.Okay
+B.No output
+C.Compile error. We cannot declare main() function.
+D - Compile error. Mismatch in declaration & definition.
+@D
+Q)What is the output of the following program?
+
+#include<stdio.h>
+
+main()
+{ 
+   int i = 13, j = 60;
+   
+   i ^= j;
+   j ^= i;
+   i ^= j;
+   
+   printf("%d %d", i, j);
+}
+
+A .73 73
+B.60 13
+C.13 60
+D.60 60
+@B
+Q)Which of the following variable cannot be used by switch-case statement?
+
+A.char
+B.int
+C.float
+D.Double
+@C
+Q)To print a double value which format specifier can be used?
+
+A.%L
+B.%lf
+C.%Lf
+D.None of the above
+@B
+Q)In the given below statement, what does the “pf” indicate?
+
+   int (*pf)();
+
+A.pf is a pointer of a function which return int
+B. pf is a pointer
+C.pf is a function pointer
+D.None of the above
+@A
+Q)What is the output of the following program?
+
+#include<stdio.h>
+
+main()
+{
+   int x = 1;
+   
+   do
+      printf("%d ", x);
+   while(x++<=1);
+}
+
+A.1
+B - 1 2
+C.No output
+D.Compile error
+@B
+Q)In the given below code, what will be the value of a variable x?
+
+#include<stdio.h>
+
+int main()
+{
+    int y = 100;
+    const int x = y;
+    
+    printf("%d\n", x);
+    return 0;
+}
+
+A.100
+B.0
+C.Print x
+D.Return Error
+@A
+Q)Choose the correct statement that can retrieve the remainder of the division 5.5 by 1.3?
+
+A.rem = modf(5.5 % 1.3)
+B.rem = modf(5.5, 1.3)
+C.rem = fmod(5.5, 1.3)
+D.rem = f(5.5, 1.3)
+@C
+Q)What is the value of ‘y’ for the following code snippet?
+
+#include<stdio.h>
+
+main()
+{
+   int x = 1;
+   
+   float y = x>>2;
+   
+   printf( "%f", y );
+}
+
+A.4
+B.0.5
+C.0
+D.1
+@C
+Q)What is the output of the following program?
+
+#include<stdio.h>
+
+main()
+{ 
+   int x = 3;
+   
+   x += 2;
+   x =+ 2;
+   printf("%d", x); 
+}
+
+A.2
+B.5
+C.7
+D.Compile error
+@A
+Q) In C, what are the various types of real data type (floating point data type)?
+
+A.Float, long double
+B.long double, short int
+C.float, double, long double
+D.short int, double, long int, float
+@C
+Q)Which of the following header file can be used to define the NULL macro?
+
+A.stdio.h, locale.h, stddef.h, stdlib.h, string.h,
+B.stddef.h, locale.h, math.h, stdlib.h, string.h,
+C.time.h, wchar.h, math.h, locale.h,
+D.math.h
+@A
+Q) Choose the function that is most appropriate for reading in a multi-word string?
+
+A.strnset()
+B.scanf()
+C.strchr()
+D.gets()
+@D
+Q)What is the output of the following code snippet?
+
+#include<stdio.h>
+
+main() 
+{
+    char c = 'A'+255;
+   
+    printf("%c", c);
+}
+
+A.A
+B.B
+C.Overflow error at runtime
+D.Compile error
+@A
+Q)What is the output of the following program?
+
+#include<stdio.h>
+
+void main()
+{
+   char s[] = "C++";
+   
+   printf("%s ",s);
+   s++;
+   printf("%s",s);
+}
+
+A.C++ C++
+B.C++ ++
+C.++ ++
+D.Compile error
+@D
+Q) In the given below code, what will be the value of a variable x?
+
+#include<stdio.h>
+
+int main()
+{
+    int y = 100;
+    const int x = y;
+    
+    printf("%d\n", x);
+    return 0;
+}
+
+A.100
+B.0
+C.Print x
+D.Return Error
+@A
+Q)Does both the loops in the following programs prints the correct string length?
+
+#include<stdio.h>
+
+main()
+{
+   int i;
+   char s[] = "hello";
+
+   for(i=0; s[i]; ++i);
+      printf("%d ", i);
+
+   i=0; 
+   while(s[i++]);
+      printf("%d ", i);
+}
+
+A.Yes, both the loops prints the correct length
+B.Only for loop prints the correct length
+C.Only while loop prints the correct length
+D.Compile error in the program.
+@B
